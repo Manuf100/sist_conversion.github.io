@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Conversión</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="menu-toggle" id="menu-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="nav-menu" id="nav-menu">
+            <li><a href="#" onclick="showSection('numeracion'); closeMenu();">Sistema de numeración</a></li>
+            <li><a href="#" onclick="showSection('temperatura'); closeMenu();">Temperatura</a></li>
+            <li><a href="#" onclick="showSection('medidas'); closeMenu();">Medidas</a></li>
+        </ul>
+    </nav>
+    <div class="content">
+        <div id="temperatura" class="section" style="display: none;">
+            <h1>Conversión de Temperaturas</h1><br><hr>
+            <h3>Desde Celcius</h3>
+            <!-- Aquí iría el contenido de conversión de temperaturas -->
+            <label for="temp-input">Temperatura inicial:</label>
+            <input type="text" id="temp-input" placeholder="Introduce la temperatura"><br><br>
+            <button onclick="convertTemperature()">Convertir</button>
+            <p id="temp-result"></p><hr>
+
+            <h3>Desde Kelvin</h3>
+            <!-- Aquí iría el contenido de conversión de temperaturas -->
+            <label for="temp-input2">Temperatura inicial:</label>
+            <input type="text" id="temp-input2" placeholder="Introduce la temperatura"><br><br>
+            <button onclick="convertTemperature2()">Convertir</button>
+            <p id="temp-result2"></p><hr>
+
+            <h3>Desde Farenheit</h3>
+            <!-- Aquí iría el contenido de conversión de temperaturas -->
+            <label for="temp-input6">Temperatura inicial:</label>
+            <input type="text" id="temp-input6" placeholder="Introduce la temperatura"><br><br>
+            <button onclick="convertTemperature6()">Convertir</button>
+            <p id="temp-result6"></p><hr>
+        </div>
+        <div id="numeracion" class="section">
+            <h1>Sistema de Numeración</h1><br><hr>
+            
+            <!-- Aquí iría el contenido de sistema de numeración -->
+            <h3>Desde Binario</h3>
+            <label for="num-input">Valor inicial:</label>
+            <input type="text" id="num-input" placeholder="Introduce el número"><br><br>
+            <button onclick="convertNumeration()">Convertir</button>
+            <p id="num-result"></p><hr>
+
+            <h3>Desde Decimal</h3>
+            <label for="num-input2">Valor inicial:</label>
+            <input type="text" id="num-input2" placeholder="Introduce el número"><br><br>
+            <button onclick="convertNumeration2()">Convertir</button>
+            <p id="num-result2"></p><hr>
+
+            <h3>Desde Octal</h3>
+            <label for="num-input3">Valor inicial:</label>
+            <input type="text" id="num-input3" placeholder="Introduce el número"><br><br>
+            <button onclick="convertNumeration3()">Convertir</button>
+            <p id="num-result3"></p><hr>
+
+            <h3>Desde Hexadecimal</h3>
+            <label for="num-input4">Valor inicial:</label>
+            <input type="text" id="num-input4" placeholder="Introduce el número"><br><br>
+            <button onclick="convertNumeration4()">Convertir</button>
+            <p id="num-result4"></p><hr>
+        </div>
+        <div id="medidas" class="section" style="display: none;">
+            <h1>Conversión de Medidas</h1><hr>
+
+            <h3>Desde kilómetro</h3>
+            <label for="measure-inputkm">Valor de la medida inicial:</label>
+            <input type="text" id="measure-inputkm" placeholder="Introduce la medida"><br><br>
+            <button onclick="convertMeasuresFromKM()">Convertir</button>
+            <p id="measure-resultkm"></p><hr>
+
+            <h3>Desde hectómetro</h3>
+            <label for="measure-inputhm">Valor de la medida inicial:</label>
+            <input type="text" id="measure-inputhm" placeholder="Introduce la medida"><br><br>
+            <button onclick="convertMeasuresFromHM()">Convertir</button>
+            <p id="measure-resulthm"></p><hr>
+
+            <h3>Desde decámetro</h3>
+            <label for="measure-inputdam">Valor de la medida inicial:</label>
+            <input type="text" id="measure-inputdam" placeholder="Introduce la medida"><br><br>
+            <button onclick="convertMeasuresFromDAM()">Convertir</button>
+            <p id="measure-resultdam"></p><hr>
+
+            <h3>Desde metro</h3>
+            <label for="measure-input">Valor de la medida inicial:</label>
+            <input type="text" id="measure-input" placeholder="Introduce la medida"><br><br>
+            <button onclick="convertMeasures()">Convertir</button>
+            <p id="measure-result"></p><hr>
+
+            <h3>Desde decímetro</h3>
+            <label for="measure-inputdm">Valor de la medida inicial:</label>
+            <input type="text" id="measure-inputdm" placeholder="Introduce la medida"><br><br>
+            <button onclick="convertMeasuresFromDM()">Convertir</button>
+            <p id="measure-resultdm"></p><hr>
+
+            <h3>Desde centímetro</h3>
+            <label for="measure-inputcm">Valor de la medida inicial:</label>
+            <input type="text" id="measure-inputcm" placeholder="Introduce la medida"><br><br>
+            <button onclick="convertMeasuresFromCM()">Convertir</button>
+            <p id="measure-resultcm"></p><hr>
+
+            <h3>Desde milímetro</h3>
+            <label for="measure-inputmm">Valor de la medida inicial:</label>
+            <input type="text" id="measure-inputmm" placeholder="Introduce la medida"><br><br>
+            <button onclick="convertMeasuresFromMM()">Convertir</button>
+            <p id="measure-resultmm"></p><hr>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
